@@ -1,0 +1,38 @@
+{
+  "id": "aiostreams-core-nexus",
+  "version": "1.0.0",
+  "name": "Core Nexus Stream",
+  "description": "1080p WEB-DL focused. BluRay/Remux blocked · SDR · Pure streaming quality. RPDB posters included.",
+  "logo": "https://raw.githubusercontent.com/brevityA/Core-Builds/main/Assets/core_icon.svg",
+  "resources": [
+    {
+      "name": "catalog",
+      "types": ["movie", "series", "anime", "other", "hentai"]
+    },
+    {
+      "name": "meta",
+      "types": ["movie", "series", "anime", "other", "hentai"]
+    },
+    {
+      "name": "stream",
+      "types": ["movie", "series", "anime", "other", "hentai"]
+    }
+  ],
+  "types": ["movie", "series", "anime", "other", "hentai"],
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "movies_top",
+      "name": "Top Movies"
+    },
+    {
+      "type": "series",
+      "id": "series_top",
+      "name": "Top Series"
+    }
+  ],
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": false
+  }
+}
