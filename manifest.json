@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "NX Fix",
   "description": "Multi-source stream aggregator with RealDebrid, TorBox, Zilean, Meteor, Comet, and torrent scrapers",
-  "logo": "https://via.placeholder.com/256x256?text=NX+Fix",
+  "logo": "http://192.168.1.123:3002/logo.png",
   "resources": [
     {
       "name": "stream",
