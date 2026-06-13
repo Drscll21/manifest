@@ -1,0 +1,130 @@
+{
+  "version": "1.0.0",
+  "name": "Core Nexus Stream Profile",
+  "description": "AIOStreams Configuration Backup",
+  "type": "profile",
+  "addons": [
+    {
+      "id": "aiostreams-core-nexus",
+      "name": "Core Nexus Stream",
+      "logo": "https://raw.githubusercontent.com/brevityA/Core-Builds/main/Assets/core_icon.svg",
+      "description": "1080p WEB-DL focused. BluRay/Remux blocked · SDR · Pure streaming quality. RPDB posters included.",
+      "manifest": {
+        "services": [
+          {
+            "id": "realdebrid",
+            "enabled": true,
+            "credentials": {}
+          },
+          {
+            "id": "torbox",
+            "enabled": true,
+            "credentials": {}
+          }
+        ],
+        "presets": [
+          {
+            "type": "library",
+            "instanceId": "lib-1",
+            "enabled": true,
+            "options": {
+              "name": "Library",
+              "timeout": 3000,
+              "resources": ["stream", "catalog", "meta"]
+            }
+          },
+          {
+            "type": "zilean",
+            "instanceId": "nx-fix-04",
+            "enabled": true,
+            "options": {
+              "name": "Zilean",
+              "timeout": 4000
+            }
+          },
+          {
+            "type": "stremthruTorz",
+            "instanceId": "67c",
+            "enabled": true,
+            "options": {
+              "name": "StremThru Torz",
+              "timeout": 3000
+            }
+          },
+          {
+            "type": "meteor",
+            "instanceId": "nx-fix-02",
+            "enabled": true,
+            "options": {
+              "name": "Meteor",
+              "timeout": 10000,
+              "url": "https://meteorfortheweebs.midnightignite.me"
+            }
+          },
+          {
+            "type": "comet",
+            "instanceId": "nx-fix-01",
+            "enabled": true,
+            "options": {
+              "name": "Comet RD",
+              "timeout": 7000
+            }
+          },
+          {
+            "type": "torrent-galaxy",
+            "enabled": true,
+            "instanceId": "8b334f9b-e5c2-4061-bc3d-305d1d0c422f",
+            "options": {
+              "name": "Torrent Galaxy",
+              "timeout": 5000
+            }
+          },
+          {
+            "type": "eztv",
+            "enabled": true,
+            "instanceId": "3cb9b60c-eee4-4622-a992-62dd746bab58",
+            "options": {
+              "name": "EZTV",
+              "timeout": 5000
+            }
+          },
+          {
+            "type": "knaben",
+            "instanceId": "tam-knaben",
+            "enabled": true,
+            "options": {
+              "name": "Knaben",
+              "timeout": 6000
+            }
+          }
+        ],
+        "preferredQualities": ["BluRay REMUX", "BluRay", "WEB-DL", "WEBRip"],
+        "preferredResolutions": ["1080p", "1440p", "720p", "2160p"],
+        "requiredResolutions": ["1080p", "720p"],
+        "excludedResolutions": ["144p", "240p", "360p"],
+        "includedLanguages": ["English", "Original", "Dual Audio", "Multi", "Dubbed", "Unknown"],
+        "preferredLanguages": ["English", "Original", "Dual Audio", "Multi", "Dubbed"],
+        "preferredSubtitles": ["English"],
+        "preferredVisualTags": ["SDR", "HLG", "10bit", "HDR", "HDR10", "HDR10+", "DV", "HDR+DV", "IMAX", "AI"],
+        "excludedAudioTags": ["TrueHD", "DTS-HD MA", "DTS:X", "FLAC"],
+        "preferredAudioTags": ["Atmos", "DTS:X", "TrueHD", "DTS-HD MA", "FLAC", "DD+", "AAC"],
+        "excludedAudioChannels": ["7.1", "6.1"],
+        "preferredAudioChannels": ["5.1", "2.0"],
+        "preferredEncodes": ["HEVC", "AVC", "AV1", "Unknown"],
+        "excludedEncodes": ["AV1"],
+        "deduplicator": {
+          "enabled": true,
+          "multiGroupBehaviour": "aggressive"
+        },
+        "autoPlay": {
+          "enabled": true,
+          "method": "matchingFile"
+        }
+      }
+    }
+  ],
+  "settings": {
+    "theme": "dark",
+    "layout": "grid"
+  }
+}
