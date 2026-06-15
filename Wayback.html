@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <title>Archive Search Tool</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.5; }
+        input { width: 300px; padding: 8px; }
+        button { padding: 8px 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Wayback Machine Search</h1>
+    <input type="text" id="urlInput" placeholder="Enter URL (e.g., google.com)">
+    <button onclick="searchArchive()">Search</button>
+
+    <script>
+        function searchArchive() {
+            const url = document.getElementById('urlInput').value.trim();
+            if (url) {
+                window.open('https://web.archive.org/web/*/' + url, '_blank');
+            } else {
+                alert('Please enter a URL to search.');
+            }
+        }
+    </script>
+</body>
+</html>
